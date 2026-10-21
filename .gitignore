@@ -1,4 +1,9 @@
 node_modules/
+dist/
+out-tsc/
+coverage/
 .nx
 .env*
 !.env.example
+vitest.config.*.timestamp*
+.vitest

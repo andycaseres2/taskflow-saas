@@ -1,0 +1,12 @@
+{
+  "name": "@taskflow/api",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@fastify/autoload": "~6.0.3",
+    "@fastify/sensible": "~6.0.2",
+    "fastify": "~5.2.1",
+    "fastify-plugin": "~5.0.1"
+  }
+}
