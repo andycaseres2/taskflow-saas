@@ -10,8 +10,8 @@
 
 - [x] Crear repo público `taskflow-saas` en GitHub con este `CLAUDE.md` y `PLAN.md` (2026-10-20)
 - [x] Monorepo con pnpm workspaces + TypeScript estricto + ESLint + Prettier (2026-10-20)
-- [ ] API Fastify mínima: `GET /health`
-- [ ] `[A MANO]` **Dockerfile multi-stage** (deps → build → runtime con imagen slim, usuario no-root)
+- [x] API Fastify mínima: `GET /health` (2026-10-20)
+- [x] `[A MANO]` **Dockerfile multi-stage** (deps → build → runtime con imagen slim, usuario no-root) (2026-10-21)
 - [ ] `[A MANO]` **docker-compose**: api + postgres + redis, con healthchecks y volúmenes
 - [ ] `[A MANO]` **GitHub Actions**: lint → typecheck → test → build de imagen Docker
 - [ ] `.env.example` + `.gitignore` correctos (gestión de secretos)
