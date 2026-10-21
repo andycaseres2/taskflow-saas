@@ -7,7 +7,7 @@
 ---
 
 ## Semana 0 — Hoy / esta semana (urgente: respalda el perfil de Torre)
-- [ ] Crear repo público `taskflow-saas` en GitHub con este `CLAUDE.md` y `PLAN.md`
+- [x] Crear repo público `taskflow-saas` en GitHub con este `CLAUDE.md` y `PLAN.md` (2026-10-20)
 - [ ] Monorepo con pnpm workspaces + TypeScript estricto + ESLint + Prettier
 - [ ] API Fastify mínima: `GET /health`
 - [ ] `[A MANO]` **Dockerfile multi-stage** (deps → build → runtime con imagen slim, usuario no-root)
