@@ -7,8 +7,9 @@
 ---
 
 ## Semana 0 — Hoy / esta semana (urgente: respalda el perfil de Torre)
+
 - [x] Crear repo público `taskflow-saas` en GitHub con este `CLAUDE.md` y `PLAN.md` (2026-10-20)
-- [ ] Monorepo con pnpm workspaces + TypeScript estricto + ESLint + Prettier
+- [x] Monorepo con pnpm workspaces + TypeScript estricto + ESLint + Prettier (2026-10-20)
 - [ ] API Fastify mínima: `GET /health`
 - [ ] `[A MANO]` **Dockerfile multi-stage** (deps → build → runtime con imagen slim, usuario no-root)
 - [ ] `[A MANO]` **docker-compose**: api + postgres + redis, con healthchecks y volúmenes
@@ -18,6 +19,7 @@
 - **Entrevista**: ¿Qué gana un Dockerfile multi-stage? ¿Por qué no correr como root? ¿Qué pasa en tu pipeline si falla un test?
 
 ## Semana 1 — Arquitectura hexagonal + TDD
+
 - [ ] Leer/ver: Hexagonal Architecture (Alistair Cockburn), resumen de DDD (Bounded Contexts, Entities, Value Objects)
 - [ ] `[A MANO]` Módulo `projects`: entidad `Project`, value object `ProjectName` (validación), regla "plan free máx. 3 proyectos"
 - [ ] `[A MANO]` TDD estricto: test rojo → verde → refactor para cada regla de dominio
@@ -28,6 +30,7 @@
 - **Entrevista**: ¿Qué es un puerto y qué un adaptador? ¿Cómo pruebas un caso de uso sin base de datos? ¿Diferencia entre Clean, Onion y Hexagonal?
 
 ## Semana 2 — PostgreSQL avanzado + multi-tenancy
+
 - [ ] Drizzle + migraciones
 - [ ] Modelo: `tenants`, `users`, `memberships`, `projects`, `tasks`
 - [ ] `[A MANO]` **Row Level Security**: políticas por `tenant_id` usando `SET app.tenant_id` por request
@@ -38,6 +41,7 @@
 - **Entrevista**: ¿Cómo garantizas que un tenant no vea datos de otro? ¿Qué es MVCC? ¿Cuándo un índice no se usa?
 
 ## Semana 3 — Auth (OAuth 2.0 / OIDC) + TypeScript avanzado
+
 - [ ] Login con Google y GitHub (flujo Authorization Code + PKCE), emitir JWT propio
 - [ ] Refresh tokens, expiración, rotación
 - [ ] Middleware que resuelve usuario + tenant desde el token
@@ -46,6 +50,7 @@
 - **Entrevista**: Diferencia OAuth 2.0 vs OIDC. ¿Por qué PKCE? ¿Dónde guardas el JWT en el front y por qué? (Menciona tu experiencia con SSO + Active Directory)
 
 ## Semana 4 — Redis, colas y eventos
+
 - [ ] Caché cache-aside para `GET /projects/:id` con invalidación
 - [ ] `[A MANO]` Lock distribuido simple con Redis (`SET NX PX`)
 - [ ] BullMQ: cola `notifications` (job al asignar una tarea), reintentos y backoff
@@ -54,6 +59,7 @@
 - **Entrevista**: cache-aside vs write-through. ¿Qué pasa si Redis se cae? ¿Qué es idempotencia en un consumer?
 
 ## Semana 5 — Ingeniería de agentes de IA (tu diferencial)
+
 - [ ] Módulo `ai-assistant`: endpoint que resume un proyecto con LLM (streaming)
 - [ ] "Tool calling": el agente puede crear tareas usando los casos de uso (no la DB directa)
 - [ ] **Servidor MCP** propio que expone `list_projects`, `create_task` (con auth por tenant)
@@ -64,6 +70,7 @@
 - **Entrevista**: ¿Cómo evitas que el agente filtre datos de otro tenant? ¿Cómo evalúas la calidad del agente? ¿Context engineering vs prompt engineering?
 
 ## Semana 6–7 — Go + gRPC (fase 2)
+
 - [ ] `[A MANO]` Tour of Go completo (go.dev/tour): structs, interfaces, goroutines, channels
 - [ ] `[A MANO]` Servicio `go-notifier` que consume la cola o recibe llamadas
 - [ ] Definir `notifier.proto` + generar código (buf o protoc)
@@ -72,6 +79,7 @@
 - **Entrevista**: REST vs gRPC, ¿cuándo cada uno? ¿Qué es una goroutine y en qué se diferencia de un thread?
 
 ## Semana 8 — Cierre de portafolio
+
 - [ ] Tests E2E básicos con Playwright (o Supertest) del flujo principal
 - [ ] README profesional: diagrama de arquitectura, cómo correrlo, decisiones (link a ADRs)
 - [ ] Deploy (Railway / Fly.io / AWS) con URL pública
@@ -81,6 +89,7 @@
 ---
 
 ## En paralelo (sin semana fija)
+
 - [ ] **Presentar AWS Cloud Practitioner** (meta: antes de que acabe noviembre)
 - [ ] Python: FastAPI + Pydantic mini-API (1 fin de semana) → quita el "no experience"
 - [ ] GitLab: crear cuenta y replicar el pipeline en GitLab CI (1 tarde)
